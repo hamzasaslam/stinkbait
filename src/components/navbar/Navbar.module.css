@@ -1,0 +1,112 @@
+ 
+.gridContainer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  justify-content: space-between;
+  font-family: Red Hat Display, sans-serif
+}
+.container {
+  width: 100%;
+  display: flex;
+flex-direction: row;
+padding-left: 274px;
+padding-right: 56px;
+}
+.tabsContainer{
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  padding: 0px;
+  justify-content: space-between;
+
+  color: #FFF;
+text-align: center;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+
+  
+}
+
+
+.rightAlignedItem {
+  display: flex;
+  margin-left: 50px;
+  /* border: 1px solid white; */
+  width: 200px;
+  
+}
+.Login,
+.SignUp {
+  font-family: Red Hat Display, sans-serif;
+  font-size: 14px;
+  height: 38px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 10px;
+  margin-right: 15px;
+
+}
+
+/* recent changes */
+
+.stinkRight, .stinkLeft{
+  color: #FFF;
+text-align: center;
+font-size: 14px;
+font-family: Red Hat Display, sans-serif;
+font-weight: 500;
+display: flex;
+align-items: center;
+flex-direction: row;
+column-gap: 5rem;
+
+}
+
+
+
+/* Responsive Screens */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .gridContainer {
+    column-gap: 4rem;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    padding: 30px;
+    justify-content: space-between;
+  }
+
+  .centeredItem {
+    margin: 0px;
+    width: 150px;
+    height: 44px;
+  }
+
+  .rightAlignedItem {
+    flex-direction: column;
+  }
+
+  .Login,
+  .SignUp {
+    width: 80px;
+    height: 20px;
+    font-size: 14px;
+  }
+
+  .SignUp {
+    margin-right: 0px;
+  }
+}
